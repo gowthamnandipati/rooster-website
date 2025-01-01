@@ -6,8 +6,6 @@ document.getElementById("submit").addEventListener("click", function () {
     if (username && password) {
       
         let users = JSON.parse(localStorage.getItem("users")) || [];
-
-      
         let user = users.find(user => user.name === username && user.password === password);
 
         if (user) {
@@ -15,6 +13,7 @@ document.getElementById("submit").addEventListener("click", function () {
         } else {
             alert("Username or password is incorrect!");
         }
+        
     } else {
         alert("Enter all the credentials!");
     }
