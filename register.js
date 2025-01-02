@@ -13,7 +13,7 @@ document.getElementById("submit").addEventListener("click",function(){
         if (userexists){
             alert("user already exists ! ")
         }else{
-            let userdetails ={name:userName,number:Number,password:Password}
+            let userdetails ={name:userName,number:Number,password:Password,role:null,isadminapproved:false}
             users.push(userdetails)
             localStorage.setItem("users",JSON.stringify(users))
             alert("user registration is sucessful")
