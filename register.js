@@ -23,9 +23,5 @@ document.getElementById("submit").addEventListener("click",function(){
     }else{
         alert("enter credentials!")
     }
-        
-
-       
     
-
 })

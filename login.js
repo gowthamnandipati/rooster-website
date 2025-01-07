@@ -1,4 +1,4 @@
-const storedUser = sessionStorage.getItem('loged_user');
+const storedUser = sessionStorage.getItem('loged_user');  
 if (storedUser) {
     window.location.href = "home.html";
 }
@@ -17,7 +17,7 @@ document.getElementById("submit").addEventListener("click", function () {
 
             // Getting session data
             // const value = sessionStorage.getItem('key');
-            window.location.href = "home.html";
+            window.location.href = "super_admin/super_admin.html";
         } else {
             alert("Username or password is incorrect!");
         }
